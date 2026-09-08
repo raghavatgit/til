@@ -8,17 +8,24 @@ A curated collection of concise engineering notes, architectural insights, and s
 
 * [Systems & Windows API](systems/)
 * [Frontend & Spatial UI](frontend/)
+* [Embedded Systems & IoT](iot/)
+* [Graphics & WebGL](graphics/)
 * [Cloud & Backend](cloud/)
 
 ---
 
 ## Index
 
-### Systems & Windows API
+### Systems & Navigation
 * [Window Cloaking with SetWindowDisplayAffinity](systems/winapi-setwindowdisplayaffinity.md)
 * [Top-Level Process Enumeration via User32](systems/windows-process-enumeration.md)
+* [Inertial Dead Reckoning and Quadratic Drift Compensation](systems/dead-reckoning-drift-compensation.md)
 
-### Frontend & Spatial UI
+### Embedded Systems & IoT
+* [ESP32 Serial Packet Framing and Telemetry Buffering](iot/esp32-serial-telemetry-framing.md)
+
+### Graphics & Spatial UI
+* [Instanced Particle Buffers in React Three Fiber](graphics/r3f-instanced-particle-shaders.md)
 * [Hardware-Accelerated 3D Perspective Transforms in CSS](frontend/css-3d-matrix-transforms.md)
 
 ### Cloud & Backend
