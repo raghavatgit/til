@@ -27,6 +27,7 @@ A curated collection of concise engineering notes, architectural insights, and s
 ### Graphics & Spatial UI
 * [Instanced Particle Buffers in React Three Fiber](graphics/r3f-instanced-particle-shaders.md)
 * [Hardware-Accelerated 3D Perspective Transforms in CSS](frontend/css-3d-matrix-transforms.md)
+* [CSS Containment and Layout Isolation in Mini-Players](frontend/css-containment-layout-isolation.md)
 
 ### Cloud & Backend
 * [Edge Middleware Authentication in Next.js App Router](cloud/nextjs-edge-middleware-auth.md)
