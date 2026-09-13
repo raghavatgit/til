@@ -20,6 +20,7 @@ A curated collection of concise engineering notes, architectural insights, and s
 * [Window Cloaking with SetWindowDisplayAffinity](systems/winapi-setwindowdisplayaffinity.md)
 * [Top-Level Process Enumeration via User32](systems/windows-process-enumeration.md)
 * [Inertial Dead Reckoning and Quadratic Drift Compensation](systems/dead-reckoning-drift-compensation.md)
+* [Windows Named Pipes IPC Across Session Boundaries](systems/winapi-named-pipes-ipc.md)
 
 ### Embedded Systems & IoT
 * [ESP32 Serial Packet Framing and Telemetry Buffering](iot/esp32-serial-telemetry-framing.md)
