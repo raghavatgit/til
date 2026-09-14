@@ -24,6 +24,7 @@ A curated collection of concise engineering notes, architectural insights, and s
 * [64-bit ASLR Remote DLL Injection Mechanics](systems/windows-aslr-remote-injection.md)
 * [64-bit Thread Context and Instruction Pointer Inspection](systems/windows-thread-context-ip-inspection.md)
 * [Cache Locality in Graph Representations: Linked Lists vs CSR](systems/adjacency-list-memory-layout-and-cache-locality.md)
+* [Memory Footprint and Queue Sizing in Graph BFS Traversals](systems/graph-bfs-queue-memory-footprint.md)
 * [Windows Virtual Memory Management: Reservation vs Commitment](systems/windows-virtual-memory-paging-internals.md)
 
 ### Embedded Systems & IoT
