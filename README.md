@@ -23,6 +23,8 @@ A curated collection of concise engineering notes, architectural insights, and s
 * [Windows Named Pipes IPC Across Session Boundaries](systems/winapi-named-pipes-ipc.md)
 * [64-bit ASLR Remote DLL Injection Mechanics](systems/windows-aslr-remote-injection.md)
 * [64-bit Thread Context and Instruction Pointer Inspection](systems/windows-thread-context-ip-inspection.md)
+* [Cache Locality in Graph Representations: Linked Lists vs CSR](systems/adjacency-list-memory-layout-and-cache-locality.md)
+* [Windows Virtual Memory Management: Reservation vs Commitment](systems/windows-virtual-memory-paging-internals.md)
 
 ### Embedded Systems & IoT
 * [ESP32 Serial Packet Framing and Telemetry Buffering](iot/esp32-serial-telemetry-framing.md)
