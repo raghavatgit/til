@@ -22,6 +22,7 @@ A curated collection of concise engineering notes, architectural insights, and s
 * [Inertial Dead Reckoning and Quadratic Drift Compensation](systems/dead-reckoning-drift-compensation.md)
 * [Windows Named Pipes IPC Across Session Boundaries](systems/winapi-named-pipes-ipc.md)
 * [64-bit ASLR Remote DLL Injection Mechanics](systems/windows-aslr-remote-injection.md)
+* [64-bit Thread Context and Instruction Pointer Inspection](systems/windows-thread-context-ip-inspection.md)
 
 ### Embedded Systems & IoT
 * [ESP32 Serial Packet Framing and Telemetry Buffering](iot/esp32-serial-telemetry-framing.md)
@@ -30,6 +31,7 @@ A curated collection of concise engineering notes, architectural insights, and s
 ### Graphics & Spatial UI
 * [Instanced Particle Buffers in React Three Fiber](graphics/r3f-instanced-particle-shaders.md)
 * [Hardware-Accelerated 3D Perspective Transforms in CSS](frontend/css-3d-matrix-transforms.md)
+* [Sentinel-Based Viewport Virtualization via IntersectionObserver](frontend/intersection-observer-virtual-scrolling.md)
 * [CSS Containment and Layout Isolation in Mini-Players](frontend/css-containment-layout-isolation.md)
 * [WebGL Vertex Attribute Divisor for Instanced Geometry](graphics/webgl-instanced-matrices-attribute-divisor.md)
 
