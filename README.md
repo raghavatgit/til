@@ -27,6 +27,7 @@ A curated collection of concise engineering notes, architectural insights, and s
 * [Memory Footprint and Queue Sizing in Graph BFS Traversals](systems/graph-bfs-queue-memory-footprint.md)
 * [Windows Virtual Memory Management: Reservation vs Commitment](systems/windows-virtual-memory-paging-internals.md)
 * [Asynchronous I/O Models: Linux epoll vs Windows IOCP](systems/linux-epoll-vs-windows-iocp.md)
+* [CPU Branch Prediction, Pipeline Bubbles, and Branchless Code](systems/cpu-branch-prediction-and-pipeline-stalls.md)
 
 ### Embedded Systems & IoT
 * [ESP32 Serial Packet Framing and Telemetry Buffering](iot/esp32-serial-telemetry-framing.md)
@@ -38,6 +39,7 @@ A curated collection of concise engineering notes, architectural insights, and s
 * [Hardware-Accelerated 3D Perspective Transforms in CSS](frontend/css-3d-matrix-transforms.md)
 * [Sentinel-Based Viewport Virtualization via IntersectionObserver](frontend/intersection-observer-virtual-scrolling.md)
 * [CSS Containment and Layout Isolation in Mini-Players](frontend/css-containment-layout-isolation.md)
+* [CSS Subgrid for Nested Multi-Card Alignments](frontend/css-subgrid-nested-layouts.md)
 * [WebGL Vertex Attribute Divisor for Instanced Geometry](graphics/webgl-instanced-matrices-attribute-divisor.md)
 
 ### Cloud & Backend
