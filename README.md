@@ -26,10 +26,12 @@ A curated collection of concise engineering notes, architectural insights, and s
 * [Cache Locality in Graph Representations: Linked Lists vs CSR](systems/adjacency-list-memory-layout-and-cache-locality.md)
 * [Memory Footprint and Queue Sizing in Graph BFS Traversals](systems/graph-bfs-queue-memory-footprint.md)
 * [Windows Virtual Memory Management: Reservation vs Commitment](systems/windows-virtual-memory-paging-internals.md)
+* [Asynchronous I/O Models: Linux epoll vs Windows IOCP](systems/linux-epoll-vs-windows-iocp.md)
 
 ### Embedded Systems & IoT
 * [ESP32 Serial Packet Framing and Telemetry Buffering](iot/esp32-serial-telemetry-framing.md)
 * [Compact Binary Struct Packing for LoRaWAN Payloads](iot/lora-packet-payload-serialization.md)
+* [CAN Bus Non-Destructive Bitwise Arbitration Mechanics](iot/can-bus-frame-arbitration.md)
 
 ### Graphics & Spatial UI
 * [Instanced Particle Buffers in React Three Fiber](graphics/r3f-instanced-particle-shaders.md)
@@ -41,3 +43,4 @@ A curated collection of concise engineering notes, architectural insights, and s
 ### Cloud & Backend
 * [Edge Middleware Authentication in Next.js App Router](cloud/nextjs-edge-middleware-auth.md)
 * [ASGI Lifespan Context Managers in Modern FastAPI](cloud/fastapi-async-worker-lifespan.md)
+* [Distributed Locking Invariants: Redlock, Clock Drift, and Fencing Tokens](cloud/redis-distributed-lock-redlock.md)
