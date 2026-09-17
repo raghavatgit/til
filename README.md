@@ -28,11 +28,13 @@ A curated collection of concise engineering notes, architectural insights, and s
 * [Windows Virtual Memory Management: Reservation vs Commitment](systems/windows-virtual-memory-paging-internals.md)
 * [Asynchronous I/O Models: Linux epoll vs Windows IOCP](systems/linux-epoll-vs-windows-iocp.md)
 * [CPU Branch Prediction, Pipeline Bubbles, and Branchless Code](systems/cpu-branch-prediction-and-pipeline-stalls.md)
+* [Hardware Memory Fences, Acquire-Release Semantics, and MESI](systems/memory-barriers-and-cpu-cache-coherency.md)
 
 ### Embedded Systems & IoT
 * [ESP32 Serial Packet Framing and Telemetry Buffering](iot/esp32-serial-telemetry-framing.md)
 * [Compact Binary Struct Packing for LoRaWAN Payloads](iot/lora-packet-payload-serialization.md)
 * [CAN Bus Non-Destructive Bitwise Arbitration Mechanics](iot/can-bus-frame-arbitration.md)
+* [Zero-Copy Circular DMA Buffers in Embedded Telemetry](iot/zero-copy-ring-buffers-in-dma-drivers.md)
 
 ### Graphics & Spatial UI
 * [Instanced Particle Buffers in React Three Fiber](graphics/r3f-instanced-particle-shaders.md)
@@ -40,9 +42,11 @@ A curated collection of concise engineering notes, architectural insights, and s
 * [Sentinel-Based Viewport Virtualization via IntersectionObserver](frontend/intersection-observer-virtual-scrolling.md)
 * [CSS Containment and Layout Isolation in Mini-Players](frontend/css-containment-layout-isolation.md)
 * [CSS Subgrid for Nested Multi-Card Alignments](frontend/css-subgrid-nested-layouts.md)
+* [Browser Back/Forward Cache (bfcache) Preservation and Paint Holding](frontend/paint-holding-and-bfcache.md)
 * [WebGL Vertex Attribute Divisor for Instanced Geometry](graphics/webgl-instanced-matrices-attribute-divisor.md)
 
 ### Cloud & Backend
 * [Edge Middleware Authentication in Next.js App Router](cloud/nextjs-edge-middleware-auth.md)
 * [ASGI Lifespan Context Managers in Modern FastAPI](cloud/fastapi-async-worker-lifespan.md)
 * [Distributed Locking Invariants: Redlock, Clock Drift, and Fencing Tokens](cloud/redis-distributed-lock-redlock.md)
+* [Database Connection Pool Sizing and Little's Law](cloud/database-connection-pooling-and-pacer.md)
