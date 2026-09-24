@@ -1,52 +1,9 @@
 # Today I Learned (TIL)
 
-A curated collection of concise engineering notes, architectural insights, and systems programming learnings documented in public.
+A personal technical knowledgebase documenting low-level systems engineering, distributed computing architectures, database internals, and software security.
 
----
-
-## Categories
-
-* [Systems & Windows API](systems/)
-* [Frontend & Spatial UI](frontend/)
-* [Embedded Systems & IoT](iot/)
-* [Graphics & WebGL](graphics/)
-* [Cloud & Backend](cloud/)
-
----
-
-## Index
-
-### Systems & Navigation
-* [Window Cloaking with SetWindowDisplayAffinity](systems/winapi-setwindowdisplayaffinity.md)
-* [Top-Level Process Enumeration via User32](systems/windows-process-enumeration.md)
-* [Inertial Dead Reckoning and Quadratic Drift Compensation](systems/dead-reckoning-drift-compensation.md)
-* [Windows Named Pipes IPC Across Session Boundaries](systems/winapi-named-pipes-ipc.md)
-* [64-bit ASLR Remote DLL Injection Mechanics](systems/windows-aslr-remote-injection.md)
-* [64-bit Thread Context and Instruction Pointer Inspection](systems/windows-thread-context-ip-inspection.md)
-* [Cache Locality in Graph Representations: Linked Lists vs CSR](systems/adjacency-list-memory-layout-and-cache-locality.md)
-* [Memory Footprint and Queue Sizing in Graph BFS Traversals](systems/graph-bfs-queue-memory-footprint.md)
-* [Windows Virtual Memory Management: Reservation vs Commitment](systems/windows-virtual-memory-paging-internals.md)
-* [Asynchronous I/O Models: Linux epoll vs Windows IOCP](systems/linux-epoll-vs-windows-iocp.md)
-* [CPU Branch Prediction, Pipeline Bubbles, and Branchless Code](systems/cpu-branch-prediction-and-pipeline-stalls.md)
-* [Hardware Memory Fences, Acquire-Release Semantics, and MESI](systems/memory-barriers-and-cpu-cache-coherency.md)
-
-### Embedded Systems & IoT
-* [ESP32 Serial Packet Framing and Telemetry Buffering](iot/esp32-serial-telemetry-framing.md)
-* [Compact Binary Struct Packing for LoRaWAN Payloads](iot/lora-packet-payload-serialization.md)
-* [CAN Bus Non-Destructive Bitwise Arbitration Mechanics](iot/can-bus-frame-arbitration.md)
-* [Zero-Copy Circular DMA Buffers in Embedded Telemetry](iot/zero-copy-ring-buffers-in-dma-drivers.md)
-
-### Graphics & Spatial UI
-* [Instanced Particle Buffers in React Three Fiber](graphics/r3f-instanced-particle-shaders.md)
-* [Hardware-Accelerated 3D Perspective Transforms in CSS](frontend/css-3d-matrix-transforms.md)
-* [Sentinel-Based Viewport Virtualization via IntersectionObserver](frontend/intersection-observer-virtual-scrolling.md)
-* [CSS Containment and Layout Isolation in Mini-Players](frontend/css-containment-layout-isolation.md)
-* [CSS Subgrid for Nested Multi-Card Alignments](frontend/css-subgrid-nested-layouts.md)
-* [Browser Back/Forward Cache (bfcache) Preservation and Paint Holding](frontend/paint-holding-and-bfcache.md)
-* [WebGL Vertex Attribute Divisor for Instanced Geometry](graphics/webgl-instanced-matrices-attribute-divisor.md)
-
-### Cloud & Backend
-* [Edge Middleware Authentication in Next.js App Router](cloud/nextjs-edge-middleware-auth.md)
-* [ASGI Lifespan Context Managers in Modern FastAPI](cloud/fastapi-async-worker-lifespan.md)
-* [Distributed Locking Invariants: Redlock, Clock Drift, and Fencing Tokens](cloud/redis-distributed-lock-redlock.md)
-* [Database Connection Pool Sizing and Little's Law](cloud/database-connection-pooling-and-pacer.md)
+## Domains Covered
+- **Linux Systems & Networking**: `io_uring`, `eBPF XDP`, `epoll` semantics, zero-copy `splice`/`sendfile`, NUMA topologies, CPU cache coherency (MESI), and memory ordering.
+- **Distributed Systems**: Raft consensus invariants, Classic Paxos vs Multi-Paxos, Consistent Hashing with virtual nodes, Vector clocks, and Two-Phase Commit.
+- **Database Internals**: LSM tree write amplification, Bloom filter optimization, B+ Tree page layouts, ARIES Write-Ahead Logging, and MVCC visibility.
+- **Security & Exploitation Mitigations**: ASLR entropy, hardware Control Flow Integrity (Intel CET), Rowhammer DRAM disturbance, and Spectre/Meltdown transient execution side-channels.
