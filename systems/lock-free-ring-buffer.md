@@ -1,36 +1,26 @@
-# Lock-Free SPSC Ring Buffer Architecture
+# Cache-Padded SPSC Lock-Free Ring Buffer
 
-## Invariant
-- Single producer writes to `head` and reads `tail`.
-- Single consumer reads from `tail` and reads `head`.
-- Head and tail pointers are cacheline-aligned (`alignas(64)`) to eliminate false sharing.
+## Motivation
+Standard cross-thread message passing channels rely on OS futexes or mutex synchronization, inducing thread descheduling and context switch latencies (upwards of 1.5 - 3.0 microseconds). A Single-Producer Single-Consumer (SPSC) lock-free ring buffer achieves sub-10ns latency using atomic operations and cache-line isolation.
 
-## C++ Implementation
-```cpp
-template <typename T, size_t Capacity>
-class SPSCQueue {
-    static_assert((Capacity & (Capacity - 1)) == 0, "Capacity must be power of two");
-    T buffer[Capacity];
-    alignas(64) std::atomic<size_t> head{0};
-    alignas(64) std::atomic<size_t> tail{0};
+## Memory Model and Cache Alignment
+False sharing occurs when the producer write index and consumer read index reside on the same 64-byte CPU cache line, triggering cache invalidation traffic across CPU interconnects (MESI protocol invalidation).
 
-public:
-    bool push(const T& item) {
-        size_t h = head.load(std::memory_order_relaxed);
-        size_t t = tail.load(std::memory_order_acquire);
-        if (h - t == Capacity) return false; // Full
-        buffer[h & (Capacity - 1)] = item;
-        head.store(h + 1, std::memory_order_release);
-        return true;
-    }
+```rust
+use std::sync::atomic::{AtomicUsize, Ordering};
 
-    bool pop(T& item) {
-        size_t t = tail.load(std::memory_order_relaxed);
-        size_t h = head.load(std::memory_order_acquire);
-        if (h == t) return false; // Empty
-        item = buffer[t & (Capacity - 1)];
-        tail.store(t + 1, std::memory_order_release);
-        return true;
-    }
-};
+#[repr(align(64))]
+pub struct CachePaddedIndex {
+    value: AtomicUsize,
+}
+
+pub struct SpscRingBuffer<T, const CAP: usize> {
+    buffer: [Option<T>; CAP],
+    head: CachePaddedIndex, // Read index (consumer exclusive)
+    tail: CachePaddedIndex, // Write index (producer exclusive)
+}
 ```
+
+## Ordering Invariants
+- Producer uses `Ordering::Release` when publishing new items to guarantee payload visibility.
+- Consumer uses `Ordering::Acquire` when loading the tail index to observe fully published payloads.
